@@ -1,0 +1,72 @@
+body {
+	background-image: url("../images/download (1).jpeg");
+}
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h3 {
+	font-size: 40px;
+	font-family: "Copperplate", Fantasy ;
+}
+h1 {
+	font-size: 30px;
+	font-family: "Brush Script MT", Cursive ;
+}
+hr {
+  border-top: 2px solid black;
+}
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 4px;
+  overflow: hidden;
+  background-color: #333;
+}
+li.list {
+	float: left;
+}
+li.list a{
+	display: blook;
+	color: white;
+	text-align: center;
+	padding: 15px 18px;
+	text-decoration: none;
+}
+li.list a:hover{
+	background-color: #FF0000;
+}
+.productdata{
+	background-color: #FFFF;
+	padding: 3px;
+}
+.coll{
+	text-align: center;
+}
+div{
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+} 
+#more {
+  background:#C0C0C0;
+  border:1px solid black;
+  color:#000000;
+  font-family:Verdana, Geneva, sans-serif;
+  cursor:pointer;
+}
+#more1 {
+  background:#808080;
+  border:1px solid black;
+  color:#000000;
+  font-family:Verdana, Geneva, sans-serif;
+  cursor:pointer;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: "Copperplate", Fantasy;
+	text-align: center;
+}

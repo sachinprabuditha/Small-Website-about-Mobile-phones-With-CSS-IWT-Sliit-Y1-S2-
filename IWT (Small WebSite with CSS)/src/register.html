@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles\styles.css">
+<link rel="stylesheet" href="styles/form.css">
+<script src="js/mySctipt.js"></script>
+<title> My Shopping Cart </title>
+</head>
+<body>
+<img src="images\Shopping.png" alt="Shopping Cart" width="200" height="200" class="logo">
+<center><h3> Shopping Cart </h3>
+<h1> The Online Shopping Store</h1></center>
+<hr>
+<ul class="nav">
+  <li class="list"><a href= "index.html">Home</a></li>
+  <li class="list"><a href= "news.html">News</a></li>
+  <li class="list"><a href= "my">About</a></li>
+  <li class="list"><a href= "my">Contact Us</a></li>
+</ul>
+
+ <h2 id="formHeadder">Registration Form</h2>
+    <div class="form">
+    <form action="" onsubmit="return checkPassword()">
+        <div class="inputfield">
+            <label>First Name</label><br>
+            <input type="text" class="text" name="text" required>
+        </div>
+        <div class="inputfield">
+            <label>Last Name</label><br>
+            <input type="text" class="text" required>
+        </div>
+        <div class="inputfield">
+            <label>Gender</label><br>
+            <input type="radio" name="gender" required>Male
+            <input type="radio" name="gender" required>Female
+        </div>
+        <div class="inputfield">
+            <label>Mobile Number</label><br>
+            <input type="tel" class="text" pattern="[0-9]{10}" required>
+        </div>
+        <div class="inputfield">
+            <label>Email Address</label><br>
+            <input type="email" class="text" required>
+        </div>
+        <div class="inputfield">
+            <label>Address</label><br>
+            <textarea name="address" id="" class="text" cols="30" rows="10" required></textarea>
+        </div>
+
+<div class="inputfield">
+            <label for="">Choose your DOB</label><br>
+            <select name="" id="date" required></select>
+            <script>
+                (function() {
+                    let option = '<option>Choose a date</option>';
+    
+                    for (let i = 1; i <= 31; i++) {
+                         option += '<option>' + i + '</option>';
+                    }
+                    document.getElementById("date").innerHTML = option;
+                })();
+            </script>
+            <select name="" id="month" required>
+                <script>
+                    (function() {
+                        let option = '<option>Choose a Month</option>';
+                        for (let i = 1; i <= 12; i++) {
+                            option += '<option>' + i + '</option>';
+                        }
+                        document.getElementById("month").innerHTML = option;
+                    })();
+                </script>
+            </select>
+            <select name="" id="year" required>
+                <script>
+                    (function() {
+                        let option = '<option>Choose a Year</option>';
+                        for (let i = 1995; i <= 2005; i++) {
+                            option += '<option>' + i + '</option>';
+                        }
+                        document.getElementById("year").innerHTML = option;
+                    })();
+                </script>
+            </select>
+        </div>
+
+<div class="input field">
+<label for="psw1">Password</label><br>
+<input type="password" id="psw" class="text" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,8}"><br><br>
+</div>
+
+<div class="input field">
+<label for="psw2"> Re Enter Password </label><br>
+<input type="password" id="psw" class="text"><br><br>
+</div>
+
+<div class="inputfield">
+            <input type="checkbox" id="checkbox" onclick="enableButton()">
+            <label>Accept privacy policy and terms</label>   
+        </div>
+
+
+<div class="inputfield">
+            <input type="submit" id="btn" disabled> 
+        </div>
+
+
+
+</form>
+
+
+
+
+
+<hr>
+<footer align = "center">
+<p style= "font-weight:bold; font-style: bold;">  Created by Sachin Prabuditha</p>
+<a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+</footer>
+</body>
+</html>

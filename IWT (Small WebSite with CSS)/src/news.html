@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles\styles.css">
+<script src="js\myScript.js"> </script>
+<script> document.write(Date()); </script>
+<title> NEWS </title>
+</head>
+<body>
+<img src="images\Shopping.png" alt="Shopping Cart" width="200" height="200" class="logo">
+<center><h3> Shopping Cart </h3>
+<h1> The Online Shopping Store</h1></center>
+<hr>
+<ul class="nav">
+  <li class="list"><a href= "index.html">Home</a></li>
+  <li class="list"><a href= "news.html">News</a></li>
+  <li class="list"><a href= "my">About</a></li>
+  <li class="list"><a href= "my">Contact Us</a></li>
+</ul><br>
+<div>
+<center>
+<button onclick=loadData('apple1') id="more"> IPhone Xs </button> 
+<button onclick=loadData('apple2') id="more">IPhone Xs Max</button> 
+<button onclick=loadData('apple3') id="more">IPhone 8 Plus</button> 
+<button onclick=loadData('apple4') id="more">IPhone SE</button> 
+<button onclick=priceForLoop() id="more1">Average Price</button> 
+<button onclick=priceHigher() id="more1">Price Higher than 1000</button> 
+<button onclick=priceLower() id="more1">Price Higher than 800</button>
+</center>
+</div>
+<div>
+<center>
+<img src="" alt="" id="images">
+        <p id="text"></p>
+        <p id="text1"></p></center>
+    </div>
+
+
+<hr>
+<footer align = "center">
+<p style= "font-weight:bold; font-style: bold;">  Created by Sachin Prabuditha</p>
+<a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+</footer>
+</body>
+</html>
